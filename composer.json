@@ -1,0 +1,43 @@
+{
+    "name": "ajuchacko/sail-7.x",
+    "description": "Docker files for running a basic Laravel 7 application.",
+    "keywords": ["laravel", "docker"],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/ajuchacko91/sail/issues",
+        "source": "https://github.com/ajuchacko91/sail"
+    },
+    "authors": [
+        {
+            "name": "Aju chacko"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "illuminate/contracts": "^7.0",
+        "illuminate/support": "^7.0"
+    },
+    "bin": [
+        "bin/sail"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Ajuchacko\\Sail\\": "src/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Ajuchacko\\Sail\\SailServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
