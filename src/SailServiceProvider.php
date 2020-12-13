@@ -44,8 +44,8 @@ class SailServiceProvider extends ServiceProvider implements DeferrableProvider
             $this->call('vendor:publish', ['--tag' => 'sail']);
 
             file_put_contents(base_path('docker-compose.yml'), str_replace(
-                './vendor/laravel/sail/runtimes/8.0',
-                './docker/8.0',
+                './vendor/laravel/sail/runtimes/7.2',
+                './docker/7.2',
                 file_get_contents(base_path('docker-compose.yml'))
             ));
         });
