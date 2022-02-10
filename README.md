@@ -2,6 +2,13 @@
 
 Laravel sail for Laravel 7 apps.
 
+This version will be using the following configurations: 
+MySQL 8.0
+PHP 7.4
+
+Therefore the docker-compose file will be slightly different from the original sail7.x and will be instead be using parts of 
+the original sail Dockerfile for PHP 7.4. 
+
 ## Installation
 
 Use the package manager [composer](https://getcomposer.org/) to install package.
